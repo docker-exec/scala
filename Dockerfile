@@ -1,5 +1,6 @@
 FROM        debian:8.0
 MAINTAINER  andystanton
+ENV         LANG C.UTF-8
 ENV         SCALA_VERSION 2.11.6
 RUN         apt-get update -qq -y && \
             apt-get install -y patch wget openjdk-7-jre-headless && \
